@@ -150,8 +150,6 @@ social:
     url: "#"
   - title: "github"
     url: "https://github.com/MacariaBand/macariaband.github.io"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
   - title: "rss"
     url: "/feed.xml"
 
