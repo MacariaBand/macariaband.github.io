@@ -311,7 +311,7 @@ ul.social-buttons li a {
     line-height: 40px;
     outline: 0;
     color: $social-buttons-color;
-    background-color: #222;
+    background-color: $social-buttons-bg-color;
 
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -320,7 +320,7 @@ ul.social-buttons li a {
     &:hover,
     &:focus,
     &:active {
-        color: #222;
+        color: $social-buttons-bg-color;
         background-color: darken($social-buttons-color, 10%);
     }
 }
@@ -445,3 +445,5 @@ body {
 .fourofour {
   border: 1px solid $primary-color !important;
 }
+
+@import 'macaria';
