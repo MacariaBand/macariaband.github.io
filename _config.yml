@@ -176,9 +176,13 @@ keybase-in-footer: False
 # Sections shown in the index page
 
 pages_list:
-  About: 'about'
+  Bio: 'bio'
   Blog: 'latest-post'
   Timeline: 'timeline'
+  Releases: 'releases'
+  A Strings' Dramedy: 'a-strings-dramedy'
+  Store: 'store'
+  Tour Dates: 'tour-dates'
   Contact: 'contact'
 
 # Exclusion list from the generated _site
