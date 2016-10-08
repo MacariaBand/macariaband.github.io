@@ -195,8 +195,8 @@ pages_list:
   #Timeline: 'timeline'
   Releases: 'releases'
   Contact: 'contact'
-  A Strings' Dramedy: 'a-strings-dramedy/'
-  Store: 'store'
+  A Strings' Dramedy: '/a-strings-dramedy/'
+  Store: 'http://bit.ly/2e88hRR'
   Tour Dates: 'tour-dates'
 
 # Exclusion list from the generated _site
