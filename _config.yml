@@ -178,10 +178,10 @@ pages_list:
   Blog: 'latest-post'
   #Timeline: 'timeline'
   Releases: 'releases'
+  Contact: 'contact'
   A Strings' Dramedy: 'a-strings-dramedy/'
   Store: 'store'
   Tour Dates: 'tour-dates'
-  Contact: 'contact'
 
 # Exclusion list from the generated _site
 
