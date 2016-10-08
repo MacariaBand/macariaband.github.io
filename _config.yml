@@ -192,7 +192,7 @@ keybase-in-footer: False
 pages_list:
   - title: 'Bio'
     external: False
-    url: '/#bio'
+    url: '#bio'
     name: 'bio'
   #- title: 'Blog'
   #  external: False
@@ -204,15 +204,15 @@ pages_list:
   #  name: 'timeline'
   - title: 'Releases'
     external: False
-    url: '/#releases'
+    url: '#releases'
     name: 'releases'
   - title: 'Contact'
     external: False
-    url: '/#contact'
+    url: '#contact'
     name: 'contact'
   - title: "A Strings' Dramedy"
     external: False
-    url: '/a-strings-dramedy/'
+    url: 'a-strings-dramedy/'
     name: ''
   - title: 'Store'
     external: True

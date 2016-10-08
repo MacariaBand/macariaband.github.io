@@ -43,7 +43,7 @@
                 <a href="{{site.baseurl}}/blog/"> {{p.title}} </a>
               {% endif %}
             {% else %}
-              <a href="{{ p.url }}" {% if p.external %} target="_blank" {% endif %}> {{ p.title }} </a>
+              <a {% if p.external %} target="_blank" href="{{ p.url }}" {% else %} href="/{{ p.url }}" {% endif %}> {{ p.title }} </a>
             {% endif %}
             </li>
           {% endfor %}
