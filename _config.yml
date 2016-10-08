@@ -176,7 +176,7 @@ keybase-in-footer: False
 pages_list:
   Bio: 'bio'
   Blog: 'latest-post'
-  Timeline: 'timeline'
+  #Timeline: 'timeline'
   Releases: 'releases'
   A Strings' Dramedy: 'a-strings-dramedy/'
   Store: 'store'
