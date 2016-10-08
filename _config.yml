@@ -47,7 +47,7 @@ background-img: "../img/macaria-logo.png"
 # Dynamic Text on the Header #
 ##############################
 
-dynamic-typing: True
+dynamic-typing: False
 shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
@@ -55,8 +55,24 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+  - text: "The air is full of  bizzarre sound"
+  - text: "Keep on dancing, keep on acting, keep on dancing"
+  - text: "From on high I try to fight my fears<br/>
+           contempling the living mosaic below me"
+  - text: "We take our children and put them in this breeding<br/>
+           where they shape them how society want"
+  - text: "Legions of shaped minds march to the future<br/>
+           breeded without way of choose"
+  - text: "Eternal prize, lure for the lucky ones<br/>
+           a comfortably illusion if your life has been damn"
+  - text: "Why he still working?<br/>
+           Love for he's family and he's dignity"
+  - text: "Our leader, our float we will always trail<br/>
+           our leader, our float has a bigger cock than your"
+  - text: "Cage, cage in this opera<br/>
+           We are all puppets, we are all puppets"
+  - text: "We are all bounded to the strings of our wills<br/>
+           We are all masters, everyone make the strings"
 
 me-img: "/img/jetpacktocat.png"
 
