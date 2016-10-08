@@ -25,6 +25,13 @@
 .btn-primary {
   background-color: $strings-dramedy;
   border-color: $strings-dramedy;
+
+  &:hover, &:focus, &:active, &:active:hover, &:active:focus {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    outline-color: $hover-color;
+  }
+
 }
 
 .navbar-custom .nav {
@@ -45,9 +52,4 @@
   background-color: $hover-color;
   border-color: $hover-color;
   color: #FFF;
-}
-
-.btn-primary:hover {
-  background-color: $hover-color;
-  border-color: $hover-color;
 }
