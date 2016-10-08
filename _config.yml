@@ -190,14 +190,38 @@ keybase-in-footer: False
 # Sections shown in the index page
 
 pages_list:
-  Bio: 'bio'
-  #Blog: 'latest-post'
-  #Timeline: 'timeline'
-  Releases: 'releases'
-  Contact: 'contact'
-  A Strings' Dramedy: '/a-strings-dramedy/'
-  Store: 'http://bit.ly/2e88hRR'
-  Tour Dates: 'tour-dates'
+  - title: 'Bio'
+    external: False
+    url: '/#bio'
+    name: 'bio'
+  #- title: 'Blog'
+  #  external: False
+  #  url: '#latest-post'
+  #  name: 'latest-post'
+  #- title: 'Timeline'
+  #  external: False
+  #  url: '#timeline'
+  #  name: 'timeline'
+  - title: 'Releases'
+    external: False
+    url: '/#releases'
+    name: 'releases'
+  - title: 'Contact'
+    external: False
+    url: '/#contact'
+    name: 'contact'
+  - title: "A Strings' Dramedy"
+    external: False
+    url: '/a-strings-dramedy/'
+    name: ''
+  - title: 'Store'
+    external: True
+    url: 'http://bit.ly/2e88hRR'
+    name: ''
+  - title: 'Tour Dates'
+    external: False
+    url: '#tour-dates'
+    name: ''
 
 # Exclusion list from the generated _site
 
