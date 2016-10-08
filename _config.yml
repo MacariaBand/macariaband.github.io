@@ -175,7 +175,7 @@ keybase-in-footer: False
 
 pages_list:
   Bio: 'bio'
-  Blog: 'latest-post'
+  #Blog: 'latest-post'
   #Timeline: 'timeline'
   Releases: 'releases'
   Contact: 'contact'
