@@ -166,10 +166,10 @@ a {
     background: url({{ site.background-img }}) no-repeat bottom center scroll;
     {% endif %}
     background-color: $header-background-color;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
     .intro-body {
         display: table-cell;
         vertical-align: middle;
@@ -194,6 +194,18 @@ a {
                 font-size: 26px;
             }
         }
+    }
+    @media(max-width:768px) {
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+        height: auto;
+        margin-top: 50px;
     }
 }
 
