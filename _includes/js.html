@@ -272,6 +272,14 @@ function addTohistory() {
 
   {% endif %}
 
+  {% if page.section-type == 'tour-dates' %}
+    <!-- Moment.js -->
+    <script src="{{site.baseurl}}/js/moment.js"></script>
+
+    <!-- Moment Timezone -->
+    <script src="{{site.baseurl}}/js/moment-timezone-with-data.js"></script>
+  {% endif %}
+
 <!-- Gesture Navigation / Swipe Instruction End -->
 
 {% endif %}

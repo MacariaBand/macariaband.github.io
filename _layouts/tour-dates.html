@@ -1,0 +1,109 @@
+
+<!-- Tour Dates Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <section id="page" class="container content-section text-center">
+      <h1>Tour Dates</h1>
+      <div class="row">
+        <div class="col-md-12">
+
+          <h2>Upcoming Events</h2>
+          <div class="table-responsive">
+            <table class="table events">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>Venue</th>
+                  <th>Location</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody class="next-tour-dates">
+              </tbody>
+            </table>
+          </div>
+
+          <br/>
+          <h2>Past Events</h2>
+          <div class="table-responsive">
+            <table class="table events">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Name</th>
+                  <th>Venue</th>
+                  <th>Location</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody class="past-tour-dates">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+    <script>
+      $(function(){
+        var $nextTbody = $(".next-tour-dates");
+        var $pastTbody = $(".past-tour-dates");
+        var tour_dates = {{ site.data.tour_dates | jsonify }};
+        $.each(tour_dates, function(index, tour_date){
+          var $tr = generateTr(tour_date);
+          var startTime = moment.tz(tour_date.start_time, tour_date.timezone);
+          var endTime = moment.tz(tour_date.end_time, tour_date.timezone);
+          if(startTime.isAfter() || endTime.isAfter()){
+            //Add in the next tour_date
+            console.log('startTime', startTime);
+            console.log('endTime', endTime);
+            $nextTbody.append($tr);
+          } else {
+            //Add in the previous tour_date
+            $pastTbody.prepend($tr);
+          }
+        });
+
+        if($nextTbody.children("tr").length === 0){
+          $nextTbody.append("<tr><td colspan=\"5\">No confirmed dates, but a lot is in the planning, so check back later for more info!</td></tr>");
+        }
+      });
+
+      /**
+       * Generate the tr to add in the events table
+       * @param  {object} tour_date The tour_date object
+       * @return {object}           Returns a jQuery object.
+       */
+      function generateTr(tour_date){
+        var $tr = $("<tr><td>" + getCoolDate(tour_date.start_time, tour_date.timezone) + "</td><td>" + tour_date.name + "</td><td>" + tour_date.place + "</td><td><a href=\"http://maps.google.com/?q=" + tour_date.address + "\" target=\"_blank\">" + tour_date.address + "</a></td><td><a href=\"" + tour_date.facebook + "\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a></td></tr>");
+        return $tr;
+      }
+
+      /**
+       * Returns a Date as a String in a cool format.
+       * @param {String} date The string to convert in a cool format.
+       * @param {String} timezone The timezone to use for the date.
+       * @return {String} The date as a String in a cool format.
+       */
+      function getCoolDate(date, timezone){
+        return moment.tz(date, timezone).format('DD/MM/YYYY - HH:mm');
+      }
+    </script>
+
+  </body>
+</html>
+
+<!-- Tour Dates Layout End -->

@@ -220,7 +220,7 @@ pages_list:
     name: ''
   - title: 'Tour Dates'
     external: False
-    url: '#tour-dates'
+    url: 'tour-dates/'
     name: ''
 
 # Exclusion list from the generated _site
