@@ -54,6 +54,16 @@
   color: #FFF;
 }
 
+.act {
+  padding-top: 75px;
+}
+
+@media(max-width:991px) {
+    .act {
+        padding-top: 0px;
+    }
+}
+
 .table.events {
   font-size: 15px;
 }
