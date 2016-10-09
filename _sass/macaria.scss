@@ -44,8 +44,19 @@
   text-align: left;
 }
 
-.nav.affix {
-  width: 270px;
+#a-strings-nav {
+  font-size: 15px;
+
+  li.active a {
+    background-color: $strings-dramedy;
+    border-color: $strings-dramedy;
+  }
+}
+
+@media(max-width:1200px) {
+  #a-strings-nav {
+    width: 220px;
+  }
 }
 
 .nav li.active a {
