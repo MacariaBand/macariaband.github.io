@@ -46,10 +46,23 @@
 
 #a-strings-nav {
   font-size: 15px;
+  text-align: left;
 
-  li.active a {
-    background-color: $strings-dramedy;
-    border-color: $strings-dramedy;
+  li.active {
+    a {
+      background-color: $strings-dramedy;
+      border-color: $strings-dramedy;
+    }
+
+    li a {
+      background-color: transparent;
+      text-align: left;
+    }
+
+    li.active a {
+      font-size: 14px;
+      border-right: 2px solid $strings-dramedy;
+    }
   }
 }
 
@@ -59,10 +72,21 @@
   }
 }
 
-.nav li.active a {
-  background-color: $hover-color;
-  border-color: $hover-color;
-  color: #FFF;
+.nav li.active {
+  a {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    color: #FFF;
+  }
+}
+
+.nav .nav {
+  display: none;
+  font-size: 13px;
+}
+
+.nav>.active>ul {
+  display: block;
 }
 
 .act {
@@ -77,7 +101,7 @@
 
 .table.events {
   font-size: 15px;
-  
+
   thead tr th {
     text-align: center;
   }
