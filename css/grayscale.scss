@@ -246,10 +246,10 @@ a {
 
 .content-section {
     margin-top: 100px;
-    padding-top: 100px;
-    @media(min-width:767px) {
-        margin-top: 125px;
-        padding-top: 125px;
+    /* padding-top: 100px; */
+    @media(min-width: 768px) and (max-width: 991px) {
+       margin-top: 50px;
+       padding-top: 50px;
     }
     /* Added in { Personal } for responsive images in posts and section contents */
     img {
