@@ -2,7 +2,7 @@
 <!-- Index Layout Start -->
 
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ page.lang }}">
 
   {% include head.html %}
 
@@ -12,10 +12,14 @@
 
     {% include header.html %}
 
-    {% for p in site.pages_list %}
+    {% assign current_lang = page.lang %}
+
+    {% for p in site.pages_list[current_lang] %}
       {% for page in site.pages %}
         {% if p.name == page.section-type %}
-          {% include {{ page.path }} %}
+          {% if current_lang == page.lang %}
+            {% include {{ page.path }} %}
+          {% endif %}
         {% endif %}
       {% endfor %}
     {% endfor %}

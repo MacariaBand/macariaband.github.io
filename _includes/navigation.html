@@ -26,7 +26,7 @@
         {% if page.section-type == "index" %}
 
           <!-- Scroll to section for each page in index -->
-          {% for p in site.pages_list %}
+          {% for p in site.pages_list[page.lang] %}
             <li>
                 <a {% if p.external == false %} class="page-scroll" {% else %} target="_blank" {% endif %} href="{{ p.url }}"> {{ p.title }} </a>
             </li>
@@ -34,7 +34,7 @@
 
         {% else %}
           <!-- Blog, Post, Tag and Error pages -->
-          {% for p in site.pages_list %}
+          {% for p in site.pages_list[page.lang] %}
             {% assign url = p.url | remove: '/' %}
             <li {% if page.section-type == url %} class="active" {% endif %}>
             {% if p.name == "latest-post" %}
@@ -49,6 +49,16 @@
             </li>
           {% endfor %}
         {% endif %}
+
+        {% comment %}
+          Print all the available languages
+        {% endcomment %}
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for p in pages %}
+          <li {% if p.lang == page.lang %}class="active-language"{% endif %}>
+            <a href="{{ p.url }}"> {{ p.lang }} </a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

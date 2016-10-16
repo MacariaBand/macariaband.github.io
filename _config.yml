@@ -187,41 +187,75 @@ keybase-in-footer: False
 
 # NB! Tread carefully if you want to change the variables below this point!
 
-# Sections shown in the index page
+# Sections shown in the menu
 
 pages_list:
-  - title: 'Bio'
-    external: False
-    url: '#bio'
-    name: 'bio'
-  #- title: 'Blog'
-  #  external: False
-  #  url: '#latest-post'
-  #  name: 'latest-post'
-  #- title: 'Timeline'
-  #  external: False
-  #  url: '#timeline'
-  #  name: 'timeline'
-  - title: 'Releases'
-    external: False
-    url: '#releases'
-    name: 'releases'
-  - title: 'Contact'
-    external: False
-    url: '#contact'
-    name: 'contact'
-  - title: "A Strings' Dramedy"
-    external: False
-    url: 'a-strings-dramedy/'
-    name: ''
-  - title: 'Store'
-    external: True
-    url: 'http://bit.ly/2e88hRR'
-    name: ''
-  - title: 'Tour Dates'
-    external: False
-    url: 'tour-dates/'
-    name: ''
+  it:
+    - title: 'Bio'
+      external: False
+      url: '#bio'
+      name: 'bio'
+    #- title: 'Blog'
+    #  external: False
+    #  url: '#latest-post'
+    #  name: 'latest-post'
+    #- title: 'Timeline'
+    #  external: False
+    #  url: '#timeline'
+    #  name: 'timeline'
+    - title: 'Release'
+      external: False
+      url: '#releases'
+      name: 'releases'
+    - title: 'Contatti'
+      external: False
+      url: '#contact'
+      name: 'contact'
+    - title: "A Strings' Dramedy"
+      external: False
+      url: 'a-strings-dramedy/'
+      name: ''
+    - title: 'Store'
+      external: True
+      url: 'http://bit.ly/2e88hRR'
+      name: ''
+    - title: 'Concerti'
+      external: False
+      url: 'concerti/'
+      name: ''
+  en:
+    - title: 'Bio'
+      external: False
+      url: '#bio'
+      name: 'bio'
+    #- title: 'Blog'
+    #  external: False
+    #  url: '#latest-post'
+    #  name: 'latest-post'
+    #- title: 'Timeline'
+    #  external: False
+    #  url: '#timeline'
+    #  name: 'timeline'
+    - title: 'Releases'
+      external: False
+      url: '#releases'
+      name: 'releases'
+    - title: 'Contact'
+      external: False
+      url: '#contact'
+      name: 'contact'
+    - title: "A Strings' Dramedy"
+      external: False
+      url: 'a-strings-dramedy/'
+      name: ''
+    - title: 'Store'
+      external: True
+      url: 'http://bit.ly/2e88hRR'
+      name: ''
+    - title: 'Tour Dates'
+      external: False
+      url: 'tour-dates/'
+      name: ''
 
 # Exclusion list from the generated _site
 
