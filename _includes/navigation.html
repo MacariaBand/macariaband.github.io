@@ -43,7 +43,17 @@
                 <a href="{{site.baseurl}}/blog/"> {{p.title}} </a>
               {% endif %}
             {% else %}
-              <a {% if p.external %} target="_blank" href="{{ p.url }}" {% else %} href="/{{ p.url }}" {% endif %}> {{ p.title }} </a>
+              {% assign first_char = p.url | slice: 0 %}
+              {% if "#" == first_char %}
+                {% if page.lang == 'en' %}
+                  {% assign navigation_url = '/' | append: p.url %}
+                {% else %}
+                  {% assign navigation_url = '/index-it.html' | append: p.url  %}
+                {% endif %}
+              {% else %}
+                {% assign navigation_url = '/' | append: p.url %}
+              {% endif %}
+              <a {% if p.external %} target="_blank" href="{{ p.url }}" {% else %} href="{{ navigation_url }}" {% endif %}> {{ p.title }}</a>
             {% endif %}
             </li>
           {% endfor %}
