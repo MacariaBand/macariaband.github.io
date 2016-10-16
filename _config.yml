@@ -257,6 +257,12 @@ pages_list:
       url: 'tour-dates/'
       name: ''
 
+#############
+# STORE URL #
+#############
+
+store_url: "http://bit.ly/2e88hRR"
+
 # Exclusion list from the generated _site
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
