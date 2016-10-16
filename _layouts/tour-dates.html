@@ -9,49 +9,7 @@
   <body>
 
     {% include navigation.html %}
-
-    <section id="page" class="container content-section text-center">
-      <h1>Tour Dates</h1>
-      <div class="row">
-        <div class="col-md-12">
-
-          <h2>Upcoming Events</h2>
-          <div class="table-responsive">
-            <table class="table events">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Name</th>
-                  <th>Venue</th>
-                  <th>Location</th>
-                  <th>Link</th>
-                </tr>
-              </thead>
-              <tbody class="next-tour-dates">
-              </tbody>
-            </table>
-          </div>
-
-          <br/>
-          <h2>Past Events</h2>
-          <div class="table-responsive">
-            <table class="table events">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Name</th>
-                  <th>Venue</th>
-                  <th>Location</th>
-                  <th>Link</th>
-                </tr>
-              </thead>
-              <tbody class="past-tour-dates">
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
+    {% include tour-dates/{{page.lang}}.html %}
 
     {% include footer.html %}
 
