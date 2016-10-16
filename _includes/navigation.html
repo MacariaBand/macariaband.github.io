@@ -35,8 +35,7 @@
         {% else %}
           <!-- Blog, Post, Tag and Error pages -->
           {% for p in site.pages_list[page.lang] %}
-            {% assign url = p.url | remove: '/' %}
-            <li {% if page.section-type == url %} class="active" {% endif %}>
+            <li {% if page.title == p.title %} class="active"{% endif %}>
             {% if p.name == "latest-post" %}
               {% if page.url == "/blog/index.html" | prepend: {{site.baseurl}} %}
                 <a class="page-scroll" href="#page"> {{p.title}} </a>
