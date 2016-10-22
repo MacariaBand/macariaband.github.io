@@ -257,11 +257,12 @@ pages_list:
       url: 'tour-dates/'
       name: ''
 
-#############
-# STORE URL #
-#############
+#################
+# EXTERNAL URLS #
+#################
 
 store_url: "http://bit.ly/2e88hRR"
+iframe_url: "http://player.believe.fr/v2/3614970367581?embed=1&amp;embedType=53f5dde7044c7"
 
 # Exclusion list from the generated _site
 
