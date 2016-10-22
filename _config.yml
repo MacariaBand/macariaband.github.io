@@ -213,7 +213,7 @@ pages_list:
       name: 'contact'
     - title: "A Strings' Dramedy"
       external: False
-      url: 'a-strings-dramedy/'
+      url: 'a-strings-dramedy-it/'
       name: ''
     - title: 'Store'
       external: True
