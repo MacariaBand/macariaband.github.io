@@ -39,7 +39,7 @@ favicon: "/img/favicon.ico"
 # Navbar #
 ##########
 
-navbar-offset-top: 200
+navbar-offset-top: 180
 
 ################
 # Header layout #
