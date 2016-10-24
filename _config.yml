@@ -35,6 +35,12 @@ description: "Official website of Macaria"
 keywords: "macaria, music, metal, strings, dramedy"
 favicon: "/img/favicon.ico"
 
+##########
+# Navbar #
+##########
+
+navbar-offset-top: 200
+
 ################
 # Header layout #
 ################
