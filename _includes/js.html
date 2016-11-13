@@ -28,6 +28,10 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
   </script>
 
+  <script>
+    $('.carousel').carousel();
+  </script>
+
 {% endif %}
 
 {% if site.syntax-highlight and page.section-type == "post" %}
