@@ -2,7 +2,7 @@
   <!-- Indicators -->
   <ol class="carousel-indicators">
     {% for review in site.data.reviews %}
-      <li data-target="#carousel-review" data-slide-to="{{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+      <li data-target="#carousel-review" data-slide-to="{{ forloop.index | minus:1 }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
     {% endfor %}
   </ol>
 
