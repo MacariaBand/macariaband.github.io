@@ -17,7 +17,13 @@
               {% if review.vote %}
                 <strong>{{ review.vote }}</strong>
               {% endif %}
-              <footer><a href="{{ review.url }}" target="_blank">{{ review.website }}</a></footer>
+              <footer>
+                {% if review.url %}
+                  <a href="{{ review.url }}" target="_blank">{{ review.website }}</a>
+                {% else %}
+                  {{ review.website }}
+                {% endif %}
+              </footer>
             </blockquote>
           </div>
         </div>
