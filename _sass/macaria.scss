@@ -118,3 +118,68 @@
 .album-review {
   border-left: 0px;
 }
+
+img.macaria-member {
+  border: 0px;
+}
+
+.ih-item.square {
+  border: 0px;
+
+  &.effect6.colored {
+    img {
+      border: 0px;
+    }
+
+    .info.macaria {
+      background: rgba(83, 19, 20, 0.6);
+
+      h3 {
+        background: rgba(83, 19, 20, 0.8);
+        margin-top: 180px;
+      }
+
+      p {
+        color: $font-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ih-item.square {
+    width: 300px;
+
+    &.effect6.colored a .info.macaria {
+      visibility: visible;
+      opacity: 1;
+      background: rgba(83, 19, 20, 0.2);
+    }
+
+    &.effect6.bottom_to_top a .info h3, &.effect6.bottom_to_top a .info p {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ih-item.square {
+    width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ih-item.square {
+    width: 253px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ih-item.square {
+    width: 353px;
+  }
+}
