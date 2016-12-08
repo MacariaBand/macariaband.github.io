@@ -7,21 +7,33 @@
 		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
 		<link>{{site.url}}{{site.baseurl}}</link>
 		<atom:link href="{{site.url}}{{site.baseurl}}/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in site.posts limit:10 %}
-			<item>
-				<title>{{post.title | xml_escape}}</title>
-				{% if post.author.name %}
-					<dc:creator>{{post.author.name | xml_escape}}</dc:creator>
-				{% endif %}
-				{% if post.excerpt %}
-					<description>{{post.excerpt | xml_escape}}</description>
-				{% else %}
-					<description>{{post.content | xml_escape}}</description>
-				{% endif %}
-				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-				<link>{{site.url}}{{site.baseurl}}{{post.url}}</link>
-				<guid isPermaLink="true">{{site.url}}{{site.baseurl}}{{post.url}}</guid>
-			</item>
-		{% endfor %}
+    {% assign seconds_ago = site.days_ago_published | times: 86400 %}
+    {% for tour_date in site.data.tour_dates %}
+      <item>
+        <title>{{tour_date.name | xml_escape}}</title>
+        <description>Live: {{tour_date.name | xml_escape}} - {{ tour_date.start_time | date: "%d/%m/%Y" }}</description>
+        <pubDate>{{ tour_date.start_time | date: "%s" | minus: seconds_ago | date: "%a, %d %b %Y %H:%M:%S %z"}}</pubDate>
+        <link>{{tour_date.facebook}}</link>
+        <guid isPermaLink="true">{{tour_date.facebook}}</guid>
+      </item>
+    {% endfor %}
+    {% comment %}
+  		{% for post in site.posts limit:10 %}
+  			<item>
+  				<title>{{post.title | xml_escape}}</title>
+  				{% if post.author.name %}
+  					<dc:creator>{{post.author.name | xml_escape}}</dc:creator>
+  				{% endif %}
+  				{% if post.excerpt %}
+  					<description>{{post.excerpt | xml_escape}}</description>
+  				{% else %}
+  					<description>{{post.content | xml_escape}}</description>
+  				{% endif %}
+  				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+  				<link>{{site.url}}{{site.baseurl}}{{post.url}}</link>
+  				<guid isPermaLink="true">{{site.url}}{{site.baseurl}}{{post.url}}</guid>
+  			</item>
+  		{% endfor %}
+    {% endcomment %}
 	</channel>
 </rss>

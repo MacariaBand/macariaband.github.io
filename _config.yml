@@ -274,6 +274,11 @@ pages_list:
 store_url: "http://bit.ly/2e88hRR"
 iframe_url: "http://player.believe.fr/v2/3614970367581?embed=1&amp;embedType=53f5dde7044c7"
 
+############
+# FEED XML #
+############
+days_ago_published: 10
+
 # Exclusion list from the generated _site
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
