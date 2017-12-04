@@ -317,26 +317,31 @@ a {
 }
 
 /* Added in { Personal } */
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: $social-buttons-color;
-    background-color: $social-buttons-bg-color;
+ul.social-buttons li {
 
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+    margin-bottom: 10px;
 
-    &:hover,
-    &:focus,
-    &:active {
-        color: $social-buttons-bg-color;
-        background-color: darken($social-buttons-color, 10%);
+    a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 40px;
+        outline: 0;
+        color: $social-buttons-color;
+        background-color: $social-buttons-bg-color;
+    
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: $social-buttons-bg-color;
+            background-color: darken($social-buttons-color, 10%);
+        }
     }
 }
 
