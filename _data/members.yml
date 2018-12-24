@@ -1,8 +1,8 @@
-- name: 'Lorenzo Manco'
+- name: 'Giacomo Albanese'
   instrument:
     en: 'Vocals'
     it: 'Voci'
-  img: '/img/members/lorenzo.jpg'
+  img: '/img/members/giacomo.jpg'
 - name: 'Federico Mauro'
   instrument:
     en: 'Keyboards'
@@ -18,11 +18,11 @@
     en: 'Guitars'
     it: 'Chitarre'
   img: '/img/members/marco.jpg'
-- name: 'Luca De Marco'
+- name: 'Francesco Erroi'
   instrument:
     en: 'Bass'
     it: 'Basso'
-  img: '/img/members/luca_de_marco.jpg'
+  img: '/img/members/francesco.jpg'
 - name: 'Luca Casto'
   instrument:
     en: 'Drums'
