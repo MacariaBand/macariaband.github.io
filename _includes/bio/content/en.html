@@ -15,10 +15,7 @@ In 2016 Macaria signed for <a href="http://www.revalverecords.com/" target="_bla
 
 Since they were born, Macaria line-up is formed by:
 <ul class="list-unstyled">
-  <li><strong>Lorenzo Manco</strong> - Vocals</li>
-  <li><strong>Federico Mauro</strong> - Keyboards</li>
-  <li><strong>Davide Pastore</strong> - Guitars</li>
-  <li><strong>Marco Carangelo</strong> - Guitars</li>
-  <li><strong>Luca De Marco</strong> - Bass</li>
-  <li><strong>Luca Casto</strong> - Drums</li>
+  {% for member in site.data.members %}
+    <li><strong>{{ member.name }}</strong> - {{ member.instrument.en }}</li>
+  {% endfor %}
 </ul>

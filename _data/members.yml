@@ -1,18 +1,30 @@
 - name: 'Lorenzo Manco'
-  instrument: 'Vocals'
+  instrument:
+    en: 'Vocals'
+    it: 'Voci'
   img: '/img/members/lorenzo.jpg'
 - name: 'Federico Mauro'
-  instrument: 'Keyboards'
+  instrument:
+    en: 'Keyboards'
+    it: 'Tastiere'
   img: '/img/members/federico.jpg'
 - name: 'Davide Pastore'
-  instrument: 'Guitars'
+  instrument:
+    en: 'Guitars'
+    it: 'Chitarre'
   img: '/img/members/davide.jpg'
 - name: 'Marco Carangelo'
-  instrument: 'Guitars'
+  instrument:
+    en: 'Guitars'
+    it: 'Chitarre'
   img: '/img/members/marco.jpg'
 - name: 'Luca De Marco'
-  instrument: 'Bass'
+  instrument:
+    en: 'Bass'
+    it: 'Basso'
   img: '/img/members/luca_de_marco.jpg'
 - name: 'Luca Casto'
-  instrument: 'Drums'
+  instrument:
+    en: 'Drums'
+    it: 'Batteria'
   img: '/img/members/luca_casto.jpg'

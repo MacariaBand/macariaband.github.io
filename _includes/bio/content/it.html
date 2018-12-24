@@ -19,10 +19,7 @@ album “**A Strings' Dramedy**”.
 
 Sin dalla loro nascita, la line-up dei Macaria è formata da:
 <ul class="list-unstyled">
-  <li><strong>Lorenzo Manco</strong> - Voci</li>
-  <li><strong>Federico Mauro</strong> - Tastiere</li>
-  <li><strong>Davide Pastore</strong> - Chitarre</li>
-  <li><strong>Marco Carangelo</strong> - Chitarre</li>
-  <li><strong>Luca De Marco</strong> - Basso</li>
-  <li><strong>Luca Casto</strong> - Batteria</li>
+  {% for member in site.data.members %}
+    <li><strong>{{ member.name }}</strong> - {{ member.instrument.it }}</li>
+  {% endfor %}
 </ul>
