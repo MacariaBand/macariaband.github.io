@@ -14,6 +14,13 @@
 
     {% assign current_lang = page.lang %}
 
+    <!-- Special section with the video -->
+    <section class="container content-section text-center">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Td4xPZjFvV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
     {% for p in site.pages_list[current_lang] %}
       {% for page in site.pages %}
         {% if p.name == page.section-type %}
