@@ -231,7 +231,7 @@ pages_list:
       name: ''
     - title: 'Store'
       external: True
-      url: 'http://bit.ly/2e88hRR'
+      url: 'https://m.me/officialmacaria'
       name: ''
     - title: 'Concerti'
       external: False
@@ -264,7 +264,7 @@ pages_list:
       name: ''
     - title: 'Store'
       external: True
-      url: 'http://bit.ly/2e88hRR'
+      url: 'https://m.me/officialmacaria'
       name: ''
     - title: 'Tour Dates'
       external: False
@@ -275,7 +275,7 @@ pages_list:
 # EXTERNAL URLS #
 #################
 
-store_url: "http://bit.ly/2e88hRR"
+store_url: "https://m.me/officialmacaria"
 iframe_url: "http://player.believe.fr/v2/3614970367581?embed=1&amp;embedType=53f5dde7044c7"
 
 ############
